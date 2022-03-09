@@ -5,9 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/background"
+    android:background="#ffedae"
     tools:context=".Activities.ProfilePageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BABY APP"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,19 +53,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextInputLayoutStyle"
-                app:boxStrokeColor="#fff"
-                android:layout_margin="10dp"
+                app:boxStrokeColor="#000"
+                android:layout_margin="5dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/childName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
+                    android:drawablePadding="5dp"
                     android:hint="Your Baby's Name"
-                    android:inputType="text"
+                    android:inputType="textCapCharacters"
                     android:textSize="15sp"
-                    android:textColor="#fff"/>
+                    android:textColor="#000"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,8 +73,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextInputLayoutStyle"
-                app:boxStrokeColor="#fff"
-                android:layout_margin="10dp"
+                app:boxStrokeColor="#000"
+                android:layout_margin="5dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -67,7 +85,7 @@
                     android:hint="Your Baby's DOB"
                     android:inputType="date"
                     android:textSize="15sp"
-                    android:textColor="#fff"/>
+                    android:textColor="#000"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -84,28 +102,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="3dp">
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/TextInputLayoutStyle"
-                app:boxStrokeColor="#fff"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+                app:boxStrokeColor="#000"
+                android:layout_margin="5dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
+                    android:drawablePadding="5dp"
                     android:hint="Boy/Girl"
-                    android:inputType="text"
+                    android:inputType="textCapCharacters"
                     android:textAlignment="center"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="19sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,7 +129,7 @@
 
         <Button
             android:id="@+id/btnCreateProfile"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/buttons_background"

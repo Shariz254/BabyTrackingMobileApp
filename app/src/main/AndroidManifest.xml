@@ -10,6 +10,63 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBabyApp">
         <activity
+            android:name=".Activities.BedtimeStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewSleepLogsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LogSleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StartWorkoutActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StartWorkoutActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StartWorkoutActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StartWorkoutActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MotivationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NutritionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HealthProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ScheduleAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MedicalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.BathProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DisplayProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StartWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WorkoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.DaiperActivity"
             android:exported="false" />
         <activity
@@ -30,6 +87,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

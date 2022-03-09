@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -18,6 +20,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.mybabyapp.Adapters.FeedingAdapter;
+import com.example.mybabyapp.DatabaseHelper;
 import com.example.mybabyapp.Models.FeedingModel;
 import com.example.mybabyapp.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -31,6 +34,10 @@ public class FeedingActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private RecyclerView recyclerView;
     private FloatingActionButton floatingActionButton;
+    private DatabaseHelper sqliteHelper;
+    Activity activity;
+    Context context;
+
 
     ArrayList<FeedingModel> Tdata = new ArrayList<>();
 
@@ -41,9 +48,9 @@ public class FeedingActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("BABY APP");
+        activity=this;
+        context=this;
+        sqliteHelper = new DatabaseHelper(this);
 
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -59,6 +66,9 @@ public class FeedingActivity extends AppCompatActivity {
                 addFeeding();
             }
         });
+
+        intUI();
+        populate();
     }
 
     void intUI(){
@@ -66,7 +76,7 @@ public class FeedingActivity extends AppCompatActivity {
     }
 
     void populate(){
-//        Tdata =
+        Tdata = sqliteHelper.loadFeedingData();
         recyclerView.setAdapter(new FeedingAdapter(Tdata));
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
     }
@@ -103,7 +113,6 @@ public class FeedingActivity extends AppCompatActivity {
                 String mfoodType = foodType.getText().toString().trim();
                 String mfoodQuantity = foodQuantity.getText().toString().trim();
 
-
                 FeedingModel data = new FeedingModel(mfeedingTime, mfoodType, mfoodQuantity);
 
                     if (data.feeding_Time==null||data.food_Type.length()<1)
@@ -119,9 +128,8 @@ public class FeedingActivity extends AppCompatActivity {
                         Log.e("Name=>", "Food Type name=>"+mfoodType);
 
                         intUI();
-                        //save_turnboy2_data(tTurnBoyName, tTurnBoyId, tTurnBoyPhone);
+                        sqliteHelper.insertFeeding(mfeedingTime,mfoodType,mfoodQuantity);
                         populate();
-
                     }
                     dialog.dismiss();
                 }

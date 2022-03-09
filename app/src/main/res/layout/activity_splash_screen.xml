@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="#ffdb58 "
     android:layout_gravity="center_vertical"
     android:padding="10dp"
     tools:context=".Activities.SplashScreenActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_vertical">
 
@@ -31,22 +31,36 @@
             android:text="MY BABY APP"
             android:padding="10dp"
             android:textSize="25sp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"/>
 
-        <Button
-            android:id="@+id/btnGetStarted"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/buttons_background"
+            android:text="Welcome Parent! Baby is Safe."
+            android:padding="10dp"
+            android:textSize="20sp"
             android:textColor="#000"
-            android:layout_gravity="center"
-            android:text="GET STARTED"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttons_background"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="GET STARTED"
+        android:gravity="bottom|center"/>
 
 </LinearLayout>

@@ -3,22 +3,57 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/background_crop.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/buttons_background.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/edittext_bg.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_bath.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_daiper.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_feeding.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_gym.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_medical.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_motivation.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_nutrition.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_sleep.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_summary.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/ic_workout.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/drawable/spinner.xml" value="0.1" />
-        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_daiper.xml" value="0.1578125" />
-        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_dashboard.xml" value="0.14705882352941177" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_bath_profile.xml" value="0.18125" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_bedtime_story.xml" value="0.19882246376811594" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_daiper.xml" value="0.14705882352941177" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_dashboard.xml" value="0.12" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_display_profile.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_feeding.xml" value="0.14375" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_food.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_health_profile.xml" value="0.1421875" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_log_sleep.xml" value="0.19882246376811594" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_login.xml" value="0.16822916666666668" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_medical.xml" value="0.1421875" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_motivation.xml" value="0.14739583333333334" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_notification.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_nutrition.xml" value="0.1328125" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_profile_page.xml" value="0.17074275362318841" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_schedule_appointment.xml" value="0.1421875" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_sleep.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.17074275362318841" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_start_workout.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_start_workout2.xml" value="0.13333333333333333" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_start_workout3.xml" value="0.14739583333333334" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_start_workout4.xml" value="0.14739583333333334" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_start_workout5.xml" value="0.13333333333333333" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_view_appointment.xml" value="0.1421875" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_view_sleep_logs.xml" value="0.19882246376811594" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/activity_workout.xml" value="0.12" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/add_bath_dialog.xml" value="0.18125" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/add_daiper_time_dialog.xml" value="0.1585144927536232" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/appointment_display_data.xml" value="0.1421875" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/bath_data_display.xml" value="0.18125" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/daiper_list_output.xml" value="0.1585144927536232" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/display_health_data.xml" value="0.19882246376811594" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/display_sleep_logs.xml" value="0.19882246376811594" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/feeding_input_file.xml" value="0.1" />
         <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/feeding_output_file.xml" value="0.1" />
+        <entry key="..\:/Games/MyBabyApp/app/src/main/res/layout/profile_data.xml" value="0.1" />
       </map>
     </option>
   </component>
