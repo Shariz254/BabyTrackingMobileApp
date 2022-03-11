@@ -2,6 +2,7 @@ package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -31,6 +32,7 @@ public class DaiperActivity extends AppCompatActivity {
     private DatabaseHelper sqliteHelper;
     Activity activity;
     Context context;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,17 @@ public class DaiperActivity extends AppCompatActivity {
         activity=this;
         context=this;
         sqliteHelper = new DatabaseHelper(this);
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         daiperRecyclerView = findViewById(R.id.daiperRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

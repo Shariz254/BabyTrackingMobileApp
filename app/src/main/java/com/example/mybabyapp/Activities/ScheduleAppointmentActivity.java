@@ -1,6 +1,7 @@
 package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,6 +23,7 @@ public class ScheduleAppointmentActivity extends AppCompatActivity {
     DatabaseHelper sqLiteHelper;
     Context context;
     Activity act;
+    private Toolbar toolbar;
 
 
     @Override
@@ -32,6 +34,17 @@ public class ScheduleAppointmentActivity extends AppCompatActivity {
         context = this;
         act = this;
         sqLiteHelper = new DatabaseHelper(this);
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         babyName = findViewById(R.id.babyName);
         babyAge = findViewById(R.id.babyAge);

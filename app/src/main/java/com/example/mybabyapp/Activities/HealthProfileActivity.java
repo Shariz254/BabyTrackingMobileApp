@@ -1,6 +1,7 @@
 package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,6 +30,8 @@ public class HealthProfileActivity extends AppCompatActivity {
 
     ArrayList<HealthDataModel> healthDataList = new ArrayList<>();
     private RecyclerView healthRecyclerView;
+    private Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,17 @@ public class HealthProfileActivity extends AppCompatActivity {
         context = this;
         act = this;
         sqLiteHelper = new DatabaseHelper(this);
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         babyWeight = findViewById(R.id.babyWeight);
         babyHeight = findViewById(R.id.babyHeight);

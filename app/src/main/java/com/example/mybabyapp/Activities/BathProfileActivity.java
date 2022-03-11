@@ -2,6 +2,7 @@ package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,7 +30,7 @@ public class BathProfileActivity extends AppCompatActivity {
     Activity act;
     private ArrayList<BathModel> Bdata = new ArrayList<>();
     private DatabaseHelper sqliteHelper;
-    
+    private Toolbar toolbar;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,17 @@ public class BathProfileActivity extends AppCompatActivity {
         context = this;
         act = this;
         sqliteHelper = new DatabaseHelper(this);
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         bathRecyclerView = findViewById(R.id.bathRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

@@ -43,13 +43,13 @@ public class LoginActivity extends AppCompatActivity {
                 String mUsername = username.getText().toString().trim();
                 String mPassword = password.getText().toString().trim();
 
-//                if (mUsername.isEmpty()){
-//                    Toast.makeText(act, "All fields are Required", Toast.LENGTH_SHORT).show();
-//                } else{
+                if (mUsername.isEmpty()){
+                    Toast.makeText(act, "All fields are Required", Toast.LENGTH_SHORT).show();
+                } else{
                     Intent intent = new Intent(LoginActivity.this, ProfilePageActivity.class);
-                    //sqLiteHelper.insertLogin(mUsername, mPassword);
+                    sqLiteHelper.insertLogin(mUsername, mPassword);
                     startActivity(intent);
-                //}
+                }
 
             }
         });

@@ -1,6 +1,7 @@
 package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import com.example.mybabyapp.R;
 public class MedicalActivity extends AppCompatActivity {
 
     private Button healthProfile, scheduleAppointment, viewAppoinmtemt;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,17 @@ public class MedicalActivity extends AppCompatActivity {
         healthProfile = findViewById(R.id.healthProfile);
         scheduleAppointment = findViewById(R.id.scheduleAppointment);
         viewAppoinmtemt = findViewById(R.id.viewAppoinmtemt);
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         healthProfile.setOnClickListener(new View.OnClickListener() {
             @Override

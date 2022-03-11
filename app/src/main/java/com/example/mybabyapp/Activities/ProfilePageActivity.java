@@ -1,6 +1,7 @@
 package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -23,11 +24,25 @@ public class ProfilePageActivity extends AppCompatActivity {
     private TextView cancel;
     SQLiteDatabase sd;
     DatabaseHelper sqLiteHelper;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
+
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
+
 
         childName = findViewById(R.id.childName);
         childDob = findViewById(R.id.childDob);
@@ -45,15 +60,15 @@ public class ProfilePageActivity extends AppCompatActivity {
                 String babyDobEDT = childDob.getText().toString().trim();
                 String babyGenderEDT = gender.getText().toString().trim();
 
-//                if (babyNameEDT.isEmpty()){
-//                    Toast.makeText(ProfilePageActivity.this, "All Fields are required", Toast.LENGTH_SHORT).show();
-//                } else {
+                if (babyNameEDT.isEmpty()){
+                    Toast.makeText(ProfilePageActivity.this, "All Fields are required", Toast.LENGTH_SHORT).show();
+                } else {
                     Intent intent = new Intent(ProfilePageActivity.this, DashboardActivity.class);
-                    //sqLiteHelper.insertProfile(babyNameEDT, babyDobEDT, babyGenderEDT);
+                    sqLiteHelper.insertProfile(babyNameEDT, babyDobEDT, babyGenderEDT);
                     startActivity(intent);
 
                     Log.e("lll", "onCreate: " +childName);
-                //}
+                }
 
             }
         });
@@ -61,7 +76,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProfilePageActivity.this, SplashScreenActivity.class);
+                Intent intent = new Intent(ProfilePageActivity.this, DashboardActivity.class);
                 startActivity(intent);
                 //finish();
             }

@@ -1,6 +1,7 @@
 package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.Activity;
 import android.content.Context;
@@ -21,6 +22,8 @@ public class LogSleepActivity extends AppCompatActivity {
     DatabaseHelper sqLiteHelper;
     Context context;
     Activity act;
+    private Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,18 @@ public class LogSleepActivity extends AppCompatActivity {
         context = this;
         act = this;
         sqLiteHelper = new DatabaseHelper(this);
+
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
 
         timeFrom = findViewById(R.id.timeFrom);

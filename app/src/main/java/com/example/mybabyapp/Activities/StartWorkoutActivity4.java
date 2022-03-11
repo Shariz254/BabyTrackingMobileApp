@@ -1,6 +1,7 @@
 package com.example.mybabyapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -23,6 +24,7 @@ public class StartWorkoutActivity4 extends AppCompatActivity {
     private CountDownTimer mcountDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+    private Toolbar toolbar;
 
 
     @Override
@@ -30,6 +32,16 @@ public class StartWorkoutActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_workout4);
 
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         mTxtCountdown = findViewById(R.id.txt_countdown);
         mBtnStart = findViewById(R.id.btn_start);

@@ -38,7 +38,6 @@ public class FeedingActivity extends AppCompatActivity {
     Activity activity;
     Context context;
 
-
     ArrayList<FeedingModel> Tdata = new ArrayList<>();
 
     @Override
@@ -51,6 +50,17 @@ public class FeedingActivity extends AppCompatActivity {
         activity=this;
         context=this;
         sqliteHelper = new DatabaseHelper(this);
+
+        //toolbar back arrow
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+        //toolbar back arrow end
 
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
