@@ -30,6 +30,7 @@
             android:background="@drawable/spinner"
             android:imeOptions="flagNoExtractUi"
             android:inputType="time"
+            android:textColor="#000"
             android:singleLine="true"
             android:textAllCaps="true" />
     </LinearLayout>
@@ -56,6 +57,7 @@
             android:background="@drawable/spinner"
             android:imeOptions="flagNoExtractUi"
             android:inputType="textCapCharacters"
+            android:textColor="#000"
             android:singleLine="true"
             android:textAllCaps="true" />
     </LinearLayout>
@@ -88,7 +90,7 @@
             android:layout_weight="1"
             android:layout_margin="1dp"
             android:background="@drawable/buttons_background"
-            android:text="Save"
+            android:text="SAVE"
             android:textAllCaps="false"
             android:textColor="#000"
             android:textSize="13sp" />

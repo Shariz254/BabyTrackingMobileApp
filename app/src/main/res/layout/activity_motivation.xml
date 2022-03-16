@@ -45,6 +45,7 @@
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:text="1. 'Your baby's Energy is channelled from yours, STAY POSITIVR ALWAYS. '"/>
 
         <TextView
@@ -52,6 +53,7 @@
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:text="2. 'Get Up and face all that comes your way Today because it's until you TRY that you ACCOMPLISH. '"/>
 
         <TextView
@@ -59,6 +61,7 @@
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:text="3. 'After a heavy rain comes a rainbow- NO SITUATION IS PERMANENT '"/>
 
         <TextView
@@ -66,6 +69,7 @@
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:text="4. 'It's completely FREE to THINK POSITIVELY. Free your mind and thoughts from all sorts of negativity. '"/>
 
         <TextView
@@ -73,6 +77,7 @@
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000"
             android:text="5. 'The DARKEST nights produce the BRIGHTEST mornings, KEEP PUSHING FORWARD '"/>
     </LinearLayout>
 

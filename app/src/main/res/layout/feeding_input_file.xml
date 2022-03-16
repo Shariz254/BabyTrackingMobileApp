@@ -31,6 +31,7 @@
             android:imeOptions="flagNoExtractUi"
             android:inputType="datetime"
             android:singleLine="true"
+            android:textColor="#000"
             android:textAllCaps="true" />
     </LinearLayout>
 
@@ -57,6 +58,7 @@
             android:imeOptions="flagNoExtractUi"
             android:inputType="text"
             android:singleLine="true"
+            android:textColor="#000"
             android:textAllCaps="true" />
 
     </LinearLayout>
@@ -84,6 +86,7 @@
             android:background="@drawable/spinner"
             android:inputType="text"
             android:singleLine="true"
+            android:textColor="#000"
             android:textAllCaps="true" />
     </LinearLayout>
 

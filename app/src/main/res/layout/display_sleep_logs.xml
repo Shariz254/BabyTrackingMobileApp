@@ -16,6 +16,7 @@
             android:layout_margin="5dp"
             android:text="TODAY'S SLEEPING SCHEDULE"
             android:textStyle="bold"
+            android:textColor="#000"
             android:textSize="18sp"/>
 
         <TextView
@@ -23,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:textColor="#000"
             android:text="Baby Weight"/>
 
         <TextView
@@ -30,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:textColor="#000"
             android:text="Baby Height" />
 
     </LinearLayout>
