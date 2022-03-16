@@ -30,40 +30,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
-        <TextView
+        <Button
+            android:id="@+id/story1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
+            android:textColor="#000"
             android:text="THE FOX AND THE HORSE"
-            android:textStyle="bold"
-            android:layout_margin="5dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Once Upon A Time, in a land FAR FAR AWAY, there lived a Horse and a Fox.The Two were bestfriends and did everything together."
-            android:textStyle="bold"
-            android:layout_margin="15dp"/>
+            android:layout_margin="10dp" />
 
-        <TextView
+        <Button
+            android:id="@+id/story2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="One Afternoon the Fox told the Horse that they should go visit an Amusement Park and have some fun.Horse agreed and they set the journey to go to the city."
-            android:textStyle="bold"
-            android:layout_margin="15dp"/><TextView
+            android:textColor="#000"
+            android:text="HUSH LITTLE BABY"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/story3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="When they arrived in the park they met many animals of their kind. They made many friends and were happy. Later in the evening they set their journey to return back home. They left the park feeling very happy."
-            android:textStyle="bold"
-            android:layout_margin="15dp"/>
+            android:textColor="#000"
+            android:text="THE RUNAWAY BUNNY"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/story4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="SNOW WHITE AND THE 7 DWARFS"
+            android:layout_margin="10dp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="CANCEL"
+        android:textColor="#000"
+        android:textSize="20sp"/>
 </LinearLayout>

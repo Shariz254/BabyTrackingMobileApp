@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.mybabyapp.R;
 
@@ -14,6 +15,7 @@ public class MedicalActivity extends AppCompatActivity {
 
     private Button healthProfile, scheduleAppointment, viewAppoinmtemt;
     private Toolbar toolbar;
+    private TextView cancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +28,11 @@ public class MedicalActivity extends AppCompatActivity {
 
         //toolbar back arrow
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        //toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                //onBackPressed();
             }
         });
         //toolbar back arrow end
@@ -58,5 +60,15 @@ public class MedicalActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        cancel = findViewById(R.id.cancel);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MedicalActivity.this, DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

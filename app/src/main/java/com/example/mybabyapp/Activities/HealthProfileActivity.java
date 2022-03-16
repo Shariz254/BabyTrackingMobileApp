@@ -44,7 +44,7 @@ public class HealthProfileActivity extends AppCompatActivity {
 
         //toolbar back arrow
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        //toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

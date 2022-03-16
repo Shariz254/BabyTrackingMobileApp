@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffedae"
+    tools:context=".Activities.Story1Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BABY APP"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/forse"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="THE FOX AND THE HORSE"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Once Upon A Time, in a land FAR FAR AWAY, there lived a Horse and a Fox.The Two were bestfriends and did everything together."
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_margin="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="One Afternoon the Fox told the Horse that they should go visit an Amusement Park and have some fun.Horse agreed and they set the journey to go to the city."
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_margin="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="When they arrived in the park they met many animals of their kind. They made many friends and were happy. Later in the evening they set their journey to return back home. They left the park feeling very happy."
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_margin="15dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="BACK"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBabyApp">
         <activity
+            android:name=".Activities.Story4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Story3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Story2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Story1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.BedtimeStoryActivity"
             android:exported="false" />
         <activity
@@ -87,7 +99,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
