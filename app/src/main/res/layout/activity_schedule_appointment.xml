@@ -83,7 +83,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Baby Age"
-                    android:inputType="number"
+                    android:inputType="textCapCharacters"
                     android:tag="Age"
                     android:textAlignment="viewStart"/>
             </com.google.android.material.textfield.TextInputLayout>

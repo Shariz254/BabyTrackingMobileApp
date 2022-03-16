@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyBabyApp">
         <activity
+            android:name=".Activities.RegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.Story4Activity"
             android:exported="false" />
         <activity

@@ -111,6 +111,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void dbAlteration() {
         try{
+            sd.execSQL("CREATE TABLE IF NOT EXISTS Registration(id INTEGER primary key AUTOINCREMENT NOT NULL, email VARCHAR, username VARCHAR, password VARCHAR)");
             sd.execSQL("CREATE TABLE IF NOT EXISTS Login(id INTEGER primary key AUTOINCREMENT NOT NULL, username VARCHAR, password VARCHAR)");
             sd.execSQL("CREATE TABLE IF NOT EXISTS Baby_Profile(id INTEGER primary key AUTOINCREMENT NOT NULL, baby_name VARCHAR, baby_dob VARCHAR, gender VARCHAR)");
             sd.execSQL("CREATE TABLE IF NOT EXISTS Feeding(id INTEGER primary key AUTOINCREMENT NOT NULL, time VARCHAR, food_type VARCHAR, quantity VARCHAR)");
@@ -141,13 +142,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues cv = new ContentValues();
 
-        cv.put("username", username);
-        cv.put("password", password);
 
-        sd.insert("Login", null, cv);
+
 
     }
 
+
+    //inserting registration
+    public void insertRegistration(String email, String username, String password) {
+        ContentValues cv = new ContentValues();
+
+        cv.put("email", email);
+        cv.put("username", username);
+        cv.put("password", password);
+
+        sd.insert("Registration", null, cv);
+
+    }
 
     //inserting profile data to db
     public Boolean insertProfile(String babyName, String babyDob, String gender){
@@ -414,5 +425,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }catch (Exception e){}
         return SleepData;
     }
+
+
     //saving feeding data
 }
